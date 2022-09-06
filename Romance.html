@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scal rel=stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"e="1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Libriary</title>
+</head>
+<body>
+    <style>
+        section{
+            padding: 0rem 5rem;
+        }
+        .card{
+            -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+        p{
+            font-size: 0.7rem;
+        }
+    </style>
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="./Libriary.html"aria-current="page" href="#">Домой</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./AboutAuthors.html">Поп. авторы</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Жанры книг
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./Romance.html">Романтика</a></li>
+            <li><a class="dropdown-item" href="./Western.html">Ковбойские</a></li>
+            <li><a class="dropdown-item" href="./Horror.html">Хоррор</a></li>
+            <li><a class="dropdown-item" href="./Historical.html">История</a></li>
+           
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Поиск</button>
+      </form>
+    </div>
+  </div>
+
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Регистрация
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-xl">
+<div class="modal-content">
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Приветствую вас в нашей библиотеке</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Регистрация</p>
+
+                <form class="mx-1 mx-md-4">
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="text" id="form3Example1c" class="form-control" />
+                      <label class="form-label" for="form3Example1c">Ваше имя</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="email" id="form3Example3c" class="form-control" />
+                      <label class="form-label" for="form3Example3c">Ваш Email</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4c" class="form-control" />
+                      <label class="form-label" for="form3Example4c">Пароль</label>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <input type="password" id="form3Example4cd" class="form-control" />
+                      <label class="form-label" for="form3Example4cd">Повторите пароль</label>
+                    </div>
+                  </div>
+
+                  <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+                    <label class="form-check-label" for="form2Example3">
+                      Я соглашаюсь с <a href="#!">Правилами</a>
+                    </label>
+                  </div>
+
+                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                    <button type="button" class="btn btn-primary btn-lg">Register</button>
+                  </div>
+
+                </form>
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                  class="img-fluid" alt="Sample image">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</nav>
+
+    <section >
+
+          <div>
+            <div class="row">
+              <div class="col">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://asianwiki.com/images/e/e4/Beautiful_World_%28Korean_Drama%29-P1.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Beautiful World</h5>
+                          <p class="card-text">Park Moo-Jin (Park Hee-Soon) and Kang In-Ha (Choo Ja-Hyun) are a married couple. Park Moo-Jin works as a high school teacher and Kang In-Ha runs a bakery. They enjoy their lives with their children. Their peaceful days soon turn into a hellish experience. Their son, who is in the 3rd grade of middle school, is seriously injured due to school violence. Park Moo-Jin and Kang In-Ha try to reveal the truth.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631794987l/56197428._SY475_.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">A Lot Like Adiós</h5>
+                          <p class="card-text">After burning out in her corporate marketing career, Michelle Amato has built a thriving freelance business as a graphic designer. So what if her love life is nonexistent? She’s perfectly fine being the black sheep of her marriage-obsessed Puerto Rican-Italian family. Besides, the only guy who ever made her want happily-ever-after disappeared thirteen</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://images3.penguinrandomhouse.com/cover/9780143136910" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Dead Collections</h5>
+                          <p class="card-text">When archivist Sol meets Elsie, the larger than life widow of a moderately famous television writer who’s come to donate her wife’s papers, there’s an instant spark. But Sol has a secret: he suffers from an illness called vampirism, and hides from the sun by living in his basement office. On their way to falling in love, the two traverse grief, delve into the Internet fandom they once unknowingly shared, and navigate the realities of transphobia and the stigmas of carrying the “vampire disease.”
+ 
+                            Then, when strange things start happening at the collection, Sol must embrace even more of the unknown to save himself and his job. DEAD COLLECTIONS is a wry novel full of heart and empathy.  
+                            
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1550603962l/37584991._SY475_.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">The Proposal by Jasmine Guillory</h5>
+                          <p class="card-text">The author of The Wedding Date serves up a novel about what happens when a public proposal doesn't turn into a happy ending, thanks to a woman who knows exactly how to make one on her own</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621846249l/55648820._SY475_.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Seven Days in June by Tia Williams</h5>
+                          <p class="card-text">Brooklynite Eva Mercy is a single mom and bestselling erotica writer, who is feeling pressed from all sides. Shane Hall is a reclusive, enigmatic, award-winning literary author who, to everyone's surprise, shows up in New York.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1467138679l/25883848._SY475_.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">The Hating Game by Sally Thorne.</h5>
+                          <p class="card-text">Debut author Sally Thorne bursts on the scene with a hilarious and sexy workplace comedy all about that thin, fine line between hate and love.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+      
+    </section>
+
+      <!-- footer -->
+      <div>
+
+        <!-- Footer -->
+        <footer
+                class="text-center text-lg-start text-white"
+                style="background-color: #1c2331"
+                >
+          <!-- Section: Social media -->
+          <section
+                   class="d-flex justify-content-between p-4"
+                   style="background-color: #6351ce"
+                   >
+            <!-- Left -->
+            <div class="me-5">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+      
+            <!-- Right -->
+            <div>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+      
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold">Digital Camp</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                      Бесплатные мастер-классы по программированию, дизайну, робототехнике и другим направлениям.
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Books</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                  Дети Моря
+                  </p>
+                  <p>
+                    Гарри Потер
+                  </p>
+                  <p>
+                   Ботатый папа Бедный папа
+                  </p>
+                  <p>
+                    Властилин Колец
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Useful links</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                   World Digital Library
+                  </p>
+                  <p>
+                      Universal Digital Library
+                  </p>
+                  
+                  <p>
+                      Project Gutenberg
+                  </p>
+                  
+                  <p>
+                      Bartleby
+                  </p>
+                  
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Contact</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p><i class="fas fa-home mr-3"></i>Ташкент, Яккасарой, 79 дом</p>
+                  <p><i class="fas fa-envelope mr-3"></i> mekhroj@gmail.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> +998 93 505 59 99</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+      
+          <!-- Copyright -->
+          <div
+               class="text-center p-3"
+               style="background-color: rgba(0, 0, 0, 0.2)"
+               >
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"
+               >MDBootstrap.com</a
+              >
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      
+      </div>
+<!-- End of .container -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
